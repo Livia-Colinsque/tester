@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Galeria Responsiva</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+      }
+      .gallery {
+          display: grid;
+          gap: 10px;
+          padding: 20px;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+          display: block;
+      }
+      @media (min-width: 768px) {
+          .gallery {
+              grid-template-columns: repeat(3, 1fr);
+          }
+      }
+      @media (max-width: 768px) and (min-width: 480px) {
+          .gallery {
+              grid-template-columns: repeat(2, 1fr);
+          }
+      }
+      @media (max-width: 480px) {
+          .gallery {
+              grid-template-columns: 1fr;
+          }
+      }
+  </style>
+</head>
+<body>
+
+
+  ﻿
+<header>
+<!--Checkbox para controlar o estado do menu (aberto/fechado) --> <input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">&#9776;</label>
+<!-- Navegação -->
+<nav>
+<ul>
+<li><a href="index.html"><img src="icon.jpg" alt="Logo" width="50"></a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="#produtos">Produtos</a></li> <li class="dropdown">
+<a href="#servicos" class="dropbtn">Serviços</a> <!-- Submenu -->
+<ul class="dropdown-content">
+<li><a href="#design">Design</a></li>
+<li><a href="#desenvolvimento">Desenvolvimento</a></li> <li><a href="#marketing">Marketing</a></li>
+</ul>
+</li>
+<li><a href="sobre.html">Sobre</a></li>
+<li><a href="login.html"><button
+class="btn-login">Login</button></a></li>
+</ul>
+</nav>
+</header>
+
+
+
+  <div class="gallery">
+      <img src="Girassol.jpg" alt="Descrição da imagem 1">
+      <img src="Lirios.jpg" alt="Descrição da imagem 2">
+      <img src="Margaridas.jpg" alt="Descrição da imagem 3">
+ <img src="Narciso.jpg" alt="Descrição da imagem 4">
+      <img src="Orquidea.jpg" alt="Descrição da imagem 5">
+      <img src="Rosas.jpg" alt="Descrição da imagem 6">
+
+    
+  </div>
+
+<section class="Rodape" id="Rodape">
+          
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>SOBRE NÓS: </h4>
+            <br>
+            <p>Nos comprometemos a fazer sua vida mais alegre e leve através de nossos chocolates mágicos.
+            </p>
+        </div>
+        <div class="footer-section">
+            <h4>CONTATO: </h4>
+            <br>
+            <p>CEP: 13041-670</p>
+            <br>
+            <p>Telefone: (19)99876-6543</p>
+            <br>
+            <p>Endereço: Av. Mágica, 0001- Magia do cacau- Campinas/SP</p>
+            <br>
+            <p>E-mail - cacaumagic@gamil.com </p>
+        </div>
+        <div class="Footer-section">
+          <h4>Siga-nos</h4>
+          <div class="Social-links">
+           
+              <a href="https://pt-br.facebook.com/" target="_blank">facebook</a>
+              <a href="https://x.com/" target="_blank">Twiter</a>
+              <a href="https://www.instagram.com/" target="_blank">instagram</a>
+          </div>
+          <br>
+          <br>
+          
+          <div class="footer-bottom">
+            <p>&copy : 2024 Empresa. Todos os Direitos reservados</p>
+           </div>
+
+      </div>
+    </div>
+   
+</footer>
+</section>
+
+</body>
+</html>
